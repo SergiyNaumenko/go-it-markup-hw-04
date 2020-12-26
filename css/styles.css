@@ -223,7 +223,7 @@ header {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    /* звідки взялися ці кольори зрозуміти */
+    /* image overlay - це виділив на макеті image overlay і там відобразилося */
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4), 
@@ -444,7 +444,7 @@ header {
 .filter-item {
 	display: flex;
 	justify-content: center;
-    margin-bottom: 94px;
+    margin-bottom: 34px;
 }
 
 .filter-list:not(:last-child) {
