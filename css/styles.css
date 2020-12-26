@@ -4,6 +4,7 @@
     --accent-color: #2196F3;
     --hero-text-color: #FFFFFF;
     --transparent-color: rgba(255, 255, 255, 0.6);
+    --icon-main-color:  #AFB1B8;
 
     --background-main-color: #E5E5E5; 
     --background-secondary-color: #F5F4FA;
@@ -329,6 +330,36 @@ header {
     width: calc((1170px - 90px) / 4);
 }
 
+.feature-benefits::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-secondary-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    object-fit: none;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
+
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram.svg)
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg)
+}
+
 .feature-list .title {
     margin-bottom: 10px;
 
@@ -394,8 +425,14 @@ header {
 }
 
 .team-card {
-    width: 270px;
-}
+    height: 428px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    }
 
 .card-face {
     margin-bottom: 30px;
@@ -414,11 +451,40 @@ header {
 }
 
 .duties {
+    margin-bottom: 10px;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+.master-icon:focus,
+.master-icon:hover {
+    background-color: var(--accent-color);
+    color: var(--hero-text-color);
+}
+
+.master-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: #FFFFFF;
+    color: var(--icon-main-color);
+}
+
+.icon-social {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 .footer {
