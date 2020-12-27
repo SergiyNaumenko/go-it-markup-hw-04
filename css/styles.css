@@ -505,6 +505,65 @@ header {
     align-items: baseline;
 }
 
+/* Постоянные клиенты */
+
+.client {
+
+}
+
+.client-heading {
+    display: block;
+    margin-top: 94px;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+}
+
+.client-icon {
+    display: flex;
+    padding-bottom: 94px;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.client-container {
+    margin-right: 30px;
+}
+.client-link:focus,
+.client-link:hover {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.client-link {
+    display: block;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: var(--primary-text-color);
+    fill: var(--primary-text-color);
+}
+
+.client-svg1 {
+    width: 44px;
+    height: 49px;
+    margin: 20px 63px;
+}
+/* Футер */
+
 .footer-apendix {
     margin-bottom: 20px;
 }
@@ -517,9 +576,6 @@ header {
 
 .adrress-footer .adrress-item:not(:last-child) {
     margin-bottom: 9px;
-    
-}
-.svg-list {
     
 }
 
@@ -548,6 +604,9 @@ header {
     justify-content: center;
 }
 
+.socials-link .roster:not(:last-child) {
+    margin-right: 10px;
+}
 
 .master-social {
     display: inline-flex;
