@@ -500,6 +500,14 @@ header {
     height: 20px;
     fill: currentColor;
 }
+.position{
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-apendix {
+    margin-bottom: 20px;
+}
 
 .footer {
     padding-top: 60px;
@@ -511,9 +519,13 @@ header {
     margin-bottom: 9px;
     
 }
+.svg-list {
+    
+}
 
 .socials-footer {
     display: block;
+    margin-left: 70px;
     align-items: center;
     font-style: normal;
     font-weight: 700;
@@ -532,9 +544,10 @@ header {
 }
 
 .socials-link {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
 }
+
 
 .master-social {
     display: inline-flex;
