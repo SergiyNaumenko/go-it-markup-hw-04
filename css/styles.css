@@ -97,6 +97,11 @@ header {
     width: 16px;
     height: 12px;
 }
+.phone-svg {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+}
 
 .adrress:focus {
     fill: var(--accent-color)
@@ -188,11 +193,12 @@ header {
 .adrress-footer .adrress:hover,
 .adrress-footer .adrress:focus{
     color: var(--accent-color);
+    fill: var(--primary-text-color);
 }
 
 .mail-link {
     margin-left: auto;
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
 .adrress-post {
@@ -283,6 +289,11 @@ header {
     border: none;
     color: var(--hero-text-color); 
     background-color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 
