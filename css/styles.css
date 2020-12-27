@@ -74,7 +74,6 @@ p {
 
 header {
     
-
     border-bottom: 1px solid var(--background-secondary-color);
 
     background-color: var(--background-head-color);
@@ -92,6 +91,17 @@ header {
     display: flex;
     align-items: center;
 }
+
+.mail-svg {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+}
+
+.adrress:focus {
+    fill: var(--accent-color)
+}
+    
 /* Logo */
 
 .logo-blue {
@@ -321,8 +331,21 @@ header {
 } 
 .feature-list {
     display: flex;
+}
 
+.feature-svg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 25px 0px;
+    background-color: var(--background-secondary-color);
+    border-radius: 4px;
+}
 
+.item-svg {
+  
+    width: 70px;
+    height: 70px;
 }
 .feature-benefits:not(:nth-child(4n)) {
     margin-right: 30px;
@@ -332,24 +355,6 @@ header {
     width: calc((1170px - 90px) / 4);
 }
 
-.icon-antenna::before {
-    background-image: url(../images/symbol-defs.svg#antenna);
-}
-
-.feature-benefits::before {
-    display: block;
-    content: '';
-    height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--background-secondary-color);
-    border-radius: 4px;
-    margin-bottom: 30px;
-    object-fit: none;
-}
-
-
 .icon-benefits {
     display: flex;
     justify-content: center;
@@ -357,22 +362,6 @@ header {
     
     background-color: var(--background-secondary-color);
 }
-/* .icon-antenna::before {
-    background-image: url(../images/symbol-defs.svg#antenna);
-}
-
-.icon-clock::before {
-    background-image: url(../images/clock.svg);
-
-}
-
-.icon-diagram::before {
-    background-image: url(../images/diagram.svg)
-}
-
-.icon-astronaut::before {
-    background-image: url(../images/astronaut.svg)
-} */
 
 .feature-list .title {
     margin-bottom: 10px;
@@ -663,6 +652,9 @@ header {
 .filter-btn:focus{
     color: var(--hero-text-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
                 /* All offers */
@@ -718,6 +710,12 @@ header {
 
     color: var(--primary-text-color);
 }    
+.offers-item-link:focus,
+.offers-item-link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+                0px 4px 4px rgba(0, 0, 0, 0.06), 
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .offers-item-link .offers-info {
     padding: 20px 24px;
