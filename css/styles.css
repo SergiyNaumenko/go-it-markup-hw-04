@@ -167,13 +167,13 @@ header {
 .adrress-header {
 
     display: flex;
+    align-items: center;
     margin-left: auto;
-    margin-right: 52px;
 }
 
 .adrress-header .adrress,
 .adrress-footer .adrress {
-
+    fill: var(--primary-text-color);
     color: var(--primary-text-color);
 }
 
@@ -193,7 +193,7 @@ header {
 .adrress-footer .adrress:hover,
 .adrress-footer .adrress:focus{
     color: var(--accent-color);
-    fill: var(--primary-text-color);
+    fill: currentColor;
 }
 
 .mail-link {
@@ -553,8 +553,8 @@ header {
     height: 90px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    color: var(--primary-text-color);
-    fill: var(--primary-text-color);
+    color: var(--icon-main-color);
+    fill: var(--icon-main-color);
 }
 
 .client-svg1 {
