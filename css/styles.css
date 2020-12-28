@@ -438,7 +438,7 @@ header {
     border-radius: 0px;
 }
 
-.team-list .distance:not(:last-child) {
+.social .distance:not(:last-child) {
     margin-right: 10px;
 }
 
