@@ -438,6 +438,11 @@ header {
     border-radius: 0px;
 }
 
+.team-list .distance:not(:last-child) {
+    margin-right: 10px;
+}
+
+
 .team-card {
     height: 428px;
     border-radius: 0px 0px 4px 4px;
